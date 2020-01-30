@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 
 app.use(cors());
+app.use(express.static('./'));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
@@ -16,7 +17,7 @@ app.use('/api', apiRouter);
 
 app.use(errorhandler());
 
-app.listen(()=>{
+app.listen(PORT, ()=>{
     console.log(`Server listening on port: ${PORT}`);
 });
 

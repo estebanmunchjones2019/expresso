@@ -1,10 +1,11 @@
 {
   "name": "expresso",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Project Overview",
   "main": "server.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -33,5 +34,16 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "webpack": "^3.5.5"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebanmunchjones2019/expresso.git"
+  },
+  "bugs": {
+    "url": "https://github.com/estebanmunchjones2019/expresso/issues"
+  },
+  "homepage": "https://github.com/estebanmunchjones2019/expresso#readme"
 }
